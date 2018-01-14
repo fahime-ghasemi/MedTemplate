@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MedTemplate</string>
+    <string name="iran">Iran is an Islamic republic on the Persian (Arabian) Gulf with historical sites dating to the Persian Empire. Extensive marble ruins mark Persepolis, the empire’s capital founded by Darius I in the 6th century B.C. The modern capital, Tehran, is home to opulent Golestan Palace, seat of the Qajar Dynasty (1794–1925), plus modern landmarks such as the 435m-high Milad Tower.</string>
+    <string name="error_connection_msg">اتصال به اینترنت نیاز است</string>
+    <string name="network_error_title">مشکل اتصال اینترنت</string>
+    <string name="internal_error_api">سرور دچار مشکل شده است. لطفا دوباره تلاش کنید</string>
+    <string name="dialog_activation_code_title">کد فعالسازی تا دقایقی دیگر برای شما پیامک میشود</string>
+    <string name="activation_code">کد فعالسازی</string>
+    <string name="send">ارسال</string>
+    <string name="resend">ارسال مجدد</string>
+    <string name="error_activation_code_input">کد فعالسازی را وارد کنید</string>
+    <string name="error_mci_number">شماره تلفن وارد شده همراه اول نیست</string>
+    <string name="error_mci_repeated">پشت سر هم نمیتوانید درخواست بفرستید چند دقیقه صبر کنید</string>
+    <string name="error_invalid_code">کد وارد شده نادرست است</string>
+    <string name="error_mci_active_service">شما سرویس را قبلا فعال نموده اید</string>
+</resources>

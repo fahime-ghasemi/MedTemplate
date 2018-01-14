@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/ActivationDialogTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_activation_code_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title">
+
+        <ImageView
+            android:id="@+id/icon"
+            style="@style/ActivationDialogImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_activation_code_24dp"
+            />
+
+        <View
+            style="@style/ActivationDialogView"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/icon"
+            />
+
+        <EditText
+            android:id="@+id/input"
+            style="@style/ActivationDialogEditText"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="16dp"
+            android:alpha="0.4"
+            android:gravity="center_vertical"
+            android:imeOptions="actionSend"
+            android:inputType="number"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout"
+        >
+
+        <TextView
+            android:id="@+id/btn_send"
+            style="@style/ActivationDialogButton"
+            android:layout_width="85dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            />
+
+        <TextView
+            android:id="@+id/btn_resend"
+            style="@style/ActivationDialogButton"
+            android:layout_width="85dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/resend"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

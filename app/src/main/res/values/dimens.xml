@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activation_code_input_width">200dp</dimen>
+    <dimen name="activation_code_input_textsize">15sp</dimen>
+    <dimen name="activation_code_btn_textSize">15sp</dimen>
+
+
+</resources>
